@@ -12,9 +12,13 @@ body {
 
 header {
     position: relative;
-    padding: 1rem;
+    height: auto;
+    padding: 2rem;
     margin: 1rem;
-    width: 100%;
+}
+
+.logo {
+    width: 150px;
 }
 
 .container {
@@ -77,6 +81,7 @@ label {
     margin: 0 auto;
     height: 50px;
     width: 100%;
+    max-width: 400px;
 }
 
 .formulario {
@@ -94,6 +99,7 @@ label {
     font-size: 1rem;
     font-family: 'Josefin Sans', sans-serif;
     background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    opacity: .8;
 }
 
 .botao {
@@ -106,9 +112,91 @@ label {
     outline: none;
     border: none;
     border-radius: 50px;
-    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));   
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
+    box-shadow: 0 0 18px 1px hsl(0, 36%, 70%, 0.460);  
 }
 
-.icone__erro, .texto__erro {
+.botao:hover {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 50%, 80%, 0.780));
+    box-shadow: 0 0 18px 1px #f4aaabbf;
+}
+
+.icone__erro {
     display: none;
+    position: absolute;
+    top: 24%;
+    left: 70%;
+}
+
+.texto__erro {
+    display:none;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    font-size: 1rem;
+}
+
+.container form.erro .icone__erro{
+    display: block;
+}
+
+.container form.erro .texto__erro{
+    display: block;
+}
+
+.container form.erro input {
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        position: absolute;
+        padding-left: 10%;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .container {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .container .coluna__direita {
+        width: 80%;
+        height: 100vh;
+        background-image: url(./images/hero-desktop.jpg);
+    }
+
+    .container .coluna__esquerda {
+        height: 100vh;
+        padding-top: 28vh;
+        text-align: left;
+        padding-left: 10%;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .container .coluna__esquerda h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+     } 
+
+    .container .coluna__esquerda p {
+        margin-left: 0;
+        font-size: 1.1rem;
+    }
+
+    .container form {
+        margin-left: 0;
+    }
+
+    .botao {
+        width: 80px;
+    }
+
 }
