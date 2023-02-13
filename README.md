@@ -23,7 +23,7 @@ Obrigado por acessarem este Desafio do Front-end Mentor!
 
 O desafio aqui era criar uma página de boas vindas que chegasse o mais próximo possível do design.
 
-O desafio previa:
+O desafio, previa:
 
 - Utilizar um leyout responsivo de acordo com a tela do dispositivo.
 - Utilizar o hover para os elementos que houver interações na página
