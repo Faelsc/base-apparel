@@ -6,7 +6,7 @@
 
 Obrigado por acessarem este Desafio do Front-end Mentor!
 
-[Frontend Mentor](https://www.frontendmentor.io) Os desafios do Front-End Mentor ajudam a melhorar suas habilidades em código através da criação de projetos realistas.
+Os desafios do [Frontend Mentor](https://www.frontendmentor.io) me ajudam a melhorar minhas habilidades em código através da criação de projetos realistas.
 
 **Para fazer este desafio eu usei um entendimento básico de HTML, CSS e JavaScript.**
 
@@ -25,7 +25,7 @@ O desafio aqui era criar uma página de boas vindas que chegasse o mais próximo
 
 O desafio, previa:
 
-- Utilizar um leyout responsivo de acordo com a tela do dispositivo.
+- Utilizar um layout responsivo de acordo com a tela do dispositivo.
 - Utilizar o hover para os elementos que houver interações na página
 - Receber uma mensagem de erro quando o formulário for submetido a:
   - O campo está vazio
@@ -46,7 +46,7 @@ Também existe um arquivo chamado `style-guide.md` contendo as informações que
 
 Comecei basicamente pelo HTML, localizei nas imagens do design as divs e as seções e separei basicamente entre direita e esquerda. Observei que haveria um campo de formulário e um botão e coloquei tudo ali.
 
-Parti para o CSS, divide as partes com Flexbox e organizei os textos e imagens, sempre prezando o mobile first, ou seja, desenvolvendo a página primeiramente para uma tela pequena de celular e depois através do Media Query criando a responsividade para uma tela grande de desktop.
+Parti para o CSS, dividi as partes com Flexbox e organizei os textos e imagens, sempre prezando o mobile first, ou seja, desenvolvendo a página primeiramente para uma tela pequena de celular e depois através do Media Query criando a responsividade para uma tela grande de desktop.
 
 Por fim fui para o JavaScript fazer uma simpls validação de campo. Criei as funções pegando cada elemento através da sua classe, criei o evento de validação e utilizei o Regex para que essa validação de email fosse feita.
 
